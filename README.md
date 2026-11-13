@@ -86,7 +86,7 @@ If PowerShell restricts script activation, you can call `.\.venv\Scripts\python.
 | §3.2 / Table 3.2, Figure 3.2 — outage/catch-up | `results/rq2_failures.csv` | `fig_rq2_catchup.png`, `summary.json` `rq2`, `rq2_sequence` |
 | §3.3 / Table 3.3, Figure 3.3 — activation modes | `results/rq3_activation.csv` | `fig_rq3_modes.png`, `summary.json` `rq3_lag`, `rq3_skew`, `rq3_msgs` |
 
-### Optional custom experiments (not part of report data)
+### Other experiments
 
 `tools/run_custom.py` accepts command-line parameters for one **exploratory simulation** condition per call, with a separate output path. For example:
 
