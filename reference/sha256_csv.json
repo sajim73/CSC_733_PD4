@@ -1,0 +1,9 @@
+{
+  "source": "Original Group 2 PD2 artifact submitted 2026-10-14",
+  "algorithm": "sha256",
+  "files": {
+    "rq1_lag.csv": "8293c066afaa970647f2d584551b8a8984f9bee2fa4af0199c65dfdeb47c837e",
+    "rq2_failures.csv": "003502bf4e1a810bd73a29039588a3e40127cc1e918d249e42b189b9560e2b08",
+    "rq3_activation.csv": "23e8a876d25853509491bd836e9cc96a63b0f55116f3397655a3197f79efc7ca"
+  }
+}

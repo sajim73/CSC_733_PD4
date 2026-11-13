@@ -1,0 +1,4 @@
+PASS: rq1_lag.csv (8293c066afaa97)
+PASS: rq2_failures.csv (003502bf4e1a81)
+PASS: rq3_activation.csv (23e8a876d25853)
+REFERENCE CHECK: 3/3 exact CSV matches

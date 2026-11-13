@@ -1,0 +1,11 @@
+PASS  C1 pull median within 1.0-2.5 s, all within 0.3-4 s (6 nodes)   [median 1.42s, range 0.99-2.42s]
+PASS  C2 push lag within 0.1-0.25 s (6 nodes)   [range 160-198 ms]
+PASS  C1 pull median within 1.0-2.5 s, all within 0.3-4 s (15 nodes)   [median 1.51s, range 0.81-2.60s]
+PASS  C2 push lag within 0.1-0.25 s (15 nodes)   [range 176-199 ms]
+PASS  C3 push lag independent of cluster size (|diff| < 20 ms)   [180 vs 190 ms]
+PASS  C4 identical results for identical seeds
+PASS  C5 50 ms delay: push lag < 0.3 s and pull lag still > 5x push   [pull 1.42->1.63s, push 180->239 ms]
+PASS  C6 10 s outage, node_timeout 5 s: eager always converges, push-only never does
+PASS  C7 lazy: immediate skew > 0.3 s; controller DtA < 0.1 s; event-loop DtA < 1 ms   [median 1430 / max 99 / max 0.49 ms]
+PASS  C8 analyze.py runs and writes all figures + summary.json
+---- 0 failed check(s)

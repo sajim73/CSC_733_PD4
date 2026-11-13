@@ -1,0 +1,11 @@
+Local PD4 verification (NOT the paper's Redis environment)
+2026-11-12
+OS: Linux-6.18.57-x86_64-with-glibc2.41
+Python: 3.13.5
+NumPy: 2.3.5
+pandas: 2.2.3
+Matplotlib: 3.10.8
+
+IMPORTANT: This runtime intentionally differs from the pinned CPython 3.10–3.12 dependencies.
+Original package: Windows 11 / Python 3.10.11. Independent reviewer: macOS / Python 3.11.18.
+For native Redis: NOT RUN / NO VALIDATION.

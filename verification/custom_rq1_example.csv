@@ -1,0 +1,5 @@
+rq,version,strategy,seed,lag_s,all_nodes_applied,nodes,oneway_delay_ms,loss_pct
+rq1,1,eager,0,0.21007633446591356,1,6,25.0,1.0
+rq1,2,eager,0,0.2100763344659029,1,6,25.0,1.0
+rq1,3,eager,0,0.21007633446589224,1,6,25.0,1.0
+rq1,4,eager,0,0.2100763344658816,1,6,25.0,1.0

@@ -1,0 +1,4 @@
+PASS parser 1/4: fully silent expected node prevents false completion
+PASS parser 2/4: complete cluster reports correct lag and skew
+PASS parser 3/4: unknown node ID rejected
+PASS parser 4/4: requested version with no applications is incomplete

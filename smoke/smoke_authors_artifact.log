@@ -1,0 +1,105 @@
+artifact commit: 58bc1b547ff129c4c7d48f41435ed52cd0dc520b
+PASS  S1 package available, documented structure present
+Cloning into 'C:/Users/gabel/AppData/Local/Temp/lp_smoke/redis'...
+Updating files:  79% (1533/1937)Updating files:  80% (1550/1937)Updating files:  81% (1569/1937)Updating files:  82% (1589/1937)Updating files:  83% (1608/1937)Updating files:  84% (1628/1937)Updating files:  85% (1647/1937)Updating files:  86% (1666/1937)Updating files:  87% (1686/1937)Updating files:  88% (1705/1937)Updating files:  89% (1724/1937)Updating files:  90% (1744/1937)Updating files:  91% (1763/1937)Updating files:  92% (1783/1937)Updating files:  93% (1802/1937)Updating files:  94% (1821/1937)Updating files:  95% (1841/1937)Updating files:  96% (1860/1937)Updating files:  97% (1879/1937)Updating files:  98% (1899/1937)Updating files:  99% (1918/1937)Updating files: 100% (1937/1937)Updating files: 100% (1937/1937), done.
+fatal: Resolve operation not in progress, we are not resuming.
+.git/rebase-apply/patch:75: trailing whitespace.
+    
+.git/rebase-apply/patch:116: trailing whitespace.
+                
+.git/rebase-apply/patch:117: trailing whitespace.
+                
+.git/rebase-apply/patch:119: trailing whitespace.
+                // Thid node must contain all patches up to its current version! 
+.git/rebase-apply/patch:129: trailing whitespace.
+                
+warning: squelched 83 whitespace errors
+warning: 88 lines add whitespace errors.
+Applying: Added Live Patching
+PASS  S2 redis-live-patch.patch applies (git am) to redis 7.0.11
+PASS  S2 patched cluster.c contains the clusterCron quiescence call
+fatal: Resolve operation not in progress, we are not resuming.
+.git/rebase-apply/patch:75: trailing whitespace.
+    
+.git/rebase-apply/patch:116: trailing whitespace.
+                
+.git/rebase-apply/patch:117: trailing whitespace.
+                
+.git/rebase-apply/patch:119: trailing whitespace.
+                // Thid node must contain all patches up to its current version! 
+.git/rebase-apply/patch:129: trailing whitespace.
+                
+warning: squelched 83 whitespace errors
+warning: 88 lines add whitespace errors.
+Applying: Added Live Patching
+.git/rebase-apply/patch:24: trailing whitespace.
+    
+.git/rebase-apply/patch:44: trailing whitespace.
+    
+.git/rebase-apply/patch:45: trailing whitespace.
+    if (p_do_count_network) { 
+.git/rebase-apply/patch:193: trailing whitespace.
+    
+.git/rebase-apply/patch:269: trailing whitespace.
+    
+warning: 5 lines add whitespace errors.
+Applying: Add network single latencies counter
+PASS  S2b live-patch + network-latency patches apply in sequence
+Cloning into 'C:/Users/gabel/AppData/Local/Temp/lp_smoke/memtier'...
+fatal: Resolve operation not in progress, we are not resuming.
+.git/rebase-apply/patch:36: trailing whitespace.
+    
+.git/rebase-apply/patch:169: trailing whitespace.
+    
+.git/rebase-apply/patch:185: trailing whitespace.
+    
+.git/rebase-apply/patch:193: trailing whitespace.
+    
+.git/rebase-apply/patch:458: trailing whitespace.
+    
+warning: squelched 7 whitespace errors
+warning: 12 lines add whitespace errors.
+Applying: Added single latency measurement
+PASS  S3 memtier_benchmark.patch applies (git am) to pinned commit d5ac1f41
+Cloning into 'C:/Users/gabel/AppData/Local/Temp/lp_smoke/kpatch'...
+fatal: Resolve operation not in progress, we are not resuming.
+.git/rebase-apply/patch:170: trailing whitespace.
+    
+.git/rebase-apply/patch:177: trailing whitespace.
+    
+.git/rebase-apply/patch:200: trailing whitespace.
+    
+.git/rebase-apply/patch:201: trailing whitespace.
+    
+.git/rebase-apply/patch:306: trailing whitespace.
+// def __powerpc64__ 
+warning: squelched 1 whitespace error
+warning: 6 lines add whitespace errors.
+Applying: Commits squashed of Rommel et al.
+.git/rebase-apply/patch:3578: trailing whitespace.
+		    fprintf(stderr, "Could not find %s (type=%d) in patch\n\n", 
+.git/rebase-apply/patch:4682: space before tab in indent.
+    	KPATCHBUILD_OPTS="$KPATCHBUILD_OPTS -R"
+.git/rebase-apply/patch:4816: space before tab in indent.
+ 	seq_write(m, " kB\n", 4);
+.git/rebase-apply/patch:4818: trailing whitespace.
+ 
+.git/rebase-apply/patch:4823: space before tab in indent.
+ 	struct sysinfo i;
+warning: squelched 962 whitespace errors
+warning: 967 lines add whitespace errors.
+Applying: Bump to v0.9.5
+PASS  S4 kpatch patches 0001+0002 apply (git am) to pinned commit 097bfa64
+PASS  S5 header carries uint16 current_patch_version at offset 2256
+PASS  S5 header carries available_patches bitmap at offset 2258
+PASS  S5 gossip notused1 field reused for version
+PASS  S5 PATCH_REQUEST message type (pull)
+PASS  S5 PATCH message type
+PASS  S5 eager push from client-receiving node
+PASS  S5 quiescence point at end of clusterCron
+PASS  S5 in-order application (next = current+1)
+MAX_PATCHES=16 (bitmap bytes = 2)
+PASS  S5 2-byte version + 2-byte bitmap = 4 extra header bytes (default build)
+added lines outside the WfPatch library: 601
+PASS  S6 Redis change size ~700 lines (measured 601 added)
+---- 0 failed check(s)
